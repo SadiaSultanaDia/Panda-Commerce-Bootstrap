@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Panda Commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
    <header class="container">
     <!-- navbar-design -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./images/logo.png" alt="">
@@ -23,13 +25,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#backpacks">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribes">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -40,14 +42,14 @@
       <section class="mt-5">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active border rounded bg-info p-5">
+              <div class="carousel-item active border rounded panda-bg-info p-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div>
                             <h2>Cool Dude Headphone</h2>
                         <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                         <h1>$420</h1>
-                        <div class="btn btn-warning">Buy Now</div>
+                        <div class="btn panda-btn-buy-now">Buy Now</div>
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -55,14 +57,14 @@
                     </div>
                 </div>
               </div>
-              <div class="carousel-item active border rounded bg-info p-5">
+              <div class="carousel-item active border rounded panda-bg-info p-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div>
                             <h2>Mega LCD TV For Sports</h2>
                         <p>This is the best television in the world for people who just want to waste time in front of funky world.</p>
                         <h1>$1200</h1>
-                        <div class="btn btn-warning">Buy Now</div>
+                        <div class="btn panda-btn-buy-now">Buy Now</div>
 
                         </div>
                     </div>
@@ -71,14 +73,14 @@
                     </div>
                 </div>
               </div>
-              <div class="carousel-item active border rounded bg-info p-5">
+              <div class="carousel-item active border rounded panda-bg-info p-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div>
                             <h2>X-Box for your living room</h2>
                         <p>This is the best x-box in the world for people who just want to waste time in front of funky world.</p>
                         <h1>$600</h1>
-                        <div class="btn btn-warning">Buy Now</div>
+                        <div class="btn panda-btn-buy-now">Buy Now</div>
 
                         </div>
                     </div>
@@ -104,7 +106,7 @@
     <!-- categeories start -->
     <section>
         <div class="container overflow-hidden text-center my-5">
-            <div class="row g-2">
+            <div class="row g-4 categories">
               <!-- single catageory -->
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="p-3 border bg-warning d-flex align-items-center justify-content-around rounded-3">
@@ -130,7 +132,7 @@
     </section>
     <!-- categeories-end -->
     <!-- shoes-section start -->
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
@@ -142,7 +144,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="m-3">
-                  <div class="btn btn-warning">Buy Now</div>
+                  <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -155,7 +157,7 @@
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -168,7 +170,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -176,7 +178,7 @@
     </section>
     <!-- shoes-section end -->
     <!-- Backpack sections start -->
-    <section class="container my-5">
+    <section class="container my-5" id="backpacks">
         <h2>Backpacks</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
@@ -188,7 +190,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="m-3">
-                  <div class="btn btn-warning">Buy Now</div>
+                  <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -201,7 +203,7 @@
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -214,15 +216,31 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
           </div>
     </section>
     <!-- Backpack sections end -->
-
+    <!-- Subscribe section starts -->
+    <section style="height: 350px;" class="container d-flex rounded-3 justify-content-center align-items-center panda-bg-info" id="subscribes">
+        <div>
+            <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales, specials and more</p>
+        <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn panda-btn-buy-now">Submit</button>
+          </form>
+        </div>
+    </section>
+    <!-- Subscribe section ends -->
    </main>
+   <footer class="mt-5 text-center">
+    <p><small>©2022. Panda Commerce. All rights reserved. Sadia, Bangladesh.</small></p>
+   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
